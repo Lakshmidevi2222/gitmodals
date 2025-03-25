@@ -11,14 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
  
       - name: Install Dependencies
         run: |
           # Assuming you don't have any dependencies for a basic HTML page, we can skip this step.
  
       - name: Upload artifact to enable deployment
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: html-file
           path: |
